@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="memegenstyle.css">
+</head>
+<body>
+    <div class="div1">
+        <header>Meme Generator</header>
+        </br>
+        <p>All forms must be completed to generate your meme!</p>
+    </div>
+    <div>
+        <form onsubmit="return generateMeme(event)">
+            <label for="imgUrl">Image URL:</label><br>
+            <input required type="url" id="imgUrl" name="imgUrl"><br>
+            <label for="topText">Text On Top:</label><br>
+            <input required type="text" id="topText" name="topText"><br>
+            <label for="bottomText">Text On Bottom:</label><br>
+            <input required type="text" id="bottomText" name="bottomText"><br>
+            <br>
+            <input type="submit" id="addMeme" value="Add Meme">
+        </form>
+        <br>
+    </div>
+    <div id="meme-container">
+    </div>
+
+
+    <script src="memegendynamo.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+/* hover over image feature in CSS, black opacity, X */
+/* choose font family, stylization */
+/* border style, weight */
+/* center forms */
+/* margin */
+/* colors */
+
+body {
+    font-family: Montserrat;
+    background-color: seashell;
+}
+
+input[type=submit] {
+    font-family: Montserrat;
+    color: orchid;
+}
+
+form {
+    background-color: lightgray;
+    border-style: ridge;
+    border-color: darkgray;
+    padding: 10px;
+    color: orchid;
+}
+
+header {
+    font-weight: bold;
+    color: orchid;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+.meme-holder {
+    position:relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid darkgray; 
+    margin: 5px;
+    border-width: 10px;
+    border-color: black;
+}
+
+.meme-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.top-text-generator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 28px;
+    color: aliceblue;
+    text-align: center;
+    width:100%;
+}
+
+.bottom-text-generator {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 28px;
+    color: aliceblue;
+    text-align: center;
+    width: 100%;
+}
+
+.meme-cover {
+    display: none;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: orchid;
+    height: 100%;
+    width:100%;
+    opacity: 30%;
+    text-align: center;
+    font-size: 72px;
+    color: aliceblue;
+}
+
+.meme-holder:hover .meme-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#meme-container {
+    display:flex;
+    flex-wrap: wrap;
+}
